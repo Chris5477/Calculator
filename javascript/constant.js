@@ -5,3 +5,9 @@ export const HTML = {
     delete : document.querySelector(".delete")
 }
 
+export const REGEX = {
+    numb : new RegExp(/\d/),
+    operator : new RegExp(/[-+*/]/),
+    allDelete : new RegExp(/[C]/i)
+}
+
