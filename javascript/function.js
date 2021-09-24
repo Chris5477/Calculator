@@ -15,13 +15,13 @@ export const equal = () => {
   HTML.resultat.innerHTML = p;
 };
 
-export const deleteScreen = () => HTML.resultat.innerHTML=""
+export const deleteScreen = () => (HTML.resultat.innerHTML = "");
 
 export const deleteLastValue = (val) => {
   const array = val.split("");
   array.pop();
   const currentValue = array.join("");
-  HTML.resultat.innerHTML=currentValue
+  HTML.resultat.innerHTML = currentValue;
 };
 
 window.addEventListener("keydown", (e) => {
